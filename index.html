@@ -575,6 +575,87 @@ footer{
   .blog-hero-card{flex-direction:column;gap:1rem;padding:1.75rem}
   .mini-stats{grid-template-columns:1fr 1fr}
 }
+
+/* ======= RESUME PAGE ======= */
+.resume-wrap{max-width:860px;margin:0 auto}
+.resume-card-main{
+  background:var(--bg3);border:1px solid var(--border);border-radius:20px;
+  overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.4);
+}
+.r-header{
+  background:linear-gradient(135deg,#1a3a5c 0%,#2e6bab 60%,#5B8CCC 100%);
+  padding:32px 40px;display:flex;align-items:center;gap:24px;
+  position:relative;overflow:hidden;
+}
+.r-header::after{content:'';position:absolute;right:-30px;top:-30px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,0.04);}
+.r-avatar{
+  width:90px;height:90px;border-radius:50%;background:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:900;color:#1a3a5c;
+  flex-shrink:0;border:3px solid rgba(255,255,255,0.6);z-index:1;
+}
+.r-htext{z-index:1;}
+.r-htext h2{font-family:'Space Grotesk',sans-serif;font-size:38px;font-weight:900;color:#fff;letter-spacing:3px;text-transform:uppercase;}
+.r-htext .r-role{font-size:11px;font-weight:700;color:rgba(255,255,255,0.9);letter-spacing:5px;margin-top:8px;text-transform:uppercase;border-left:4px solid #FFD700;padding-left:10px;}
+.r-body{display:table;width:100%}
+.r-left{display:table-cell;width:46%;padding:26px 20px 26px 30px;border-right:1px solid rgba(0,212,255,0.1);vertical-align:top}
+.r-right{display:table-cell;width:54%;padding:26px 30px 26px 20px;vertical-align:top}
+.r-sec{margin-bottom:22px}
+.r-sec-title{
+  font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;
+  color:var(--cyan);text-transform:uppercase;letter-spacing:2.5px;
+  margin-bottom:12px;padding-bottom:5px;border-bottom:1px solid rgba(0,212,255,0.2);
+  display:flex;align-items:center;gap:7px;
+}
+.r-sec-title::before{content:'';display:inline-block;width:6px;height:6px;background:#FFD700;border-radius:50%;}
+.r-proj-name{font-family:'Space Grotesk',sans-serif;font-size:11.5px;font-weight:700;color:var(--white);margin-bottom:3px;text-transform:uppercase;letter-spacing:0.8px;}
+.r-proj-desc{font-size:11px;color:var(--gray);line-height:1.6;margin-bottom:10px;}
+.r-skills-wrap{display:block}
+.r-skill-tag{
+  display:inline-block;background:rgba(0,212,255,0.07);color:var(--cyan);
+  font-size:10px;font-weight:600;padding:3px 10px;border-radius:8px;
+  border:1px solid rgba(0,212,255,0.18);text-transform:uppercase;
+  letter-spacing:0.5px;margin:3px 3px 0 0;
+  font-family:'JetBrains Mono',monospace;
+}
+.r-edu-block{margin-bottom:12px}
+.r-edu-inst{font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:0.5px;}
+.r-edu-degree{font-size:11px;color:var(--gray);margin-top:2px;}
+.r-edu-year{font-size:10.5px;color:var(--cyan);font-weight:600;margin-top:2px;font-family:'JetBrains Mono',monospace;}
+.r-edu-grade{font-size:10.5px;color:var(--gray2);margin-top:1px;}
+.r-divider{height:1px;background:rgba(0,212,255,0.08);margin:6px 0 12px;}
+.r-profile-row{display:table;width:100%;margin-bottom:8px;}
+.r-profile-label{display:table-cell;font-weight:700;color:var(--gray);width:68px;text-transform:uppercase;font-size:10px;letter-spacing:0.5px;vertical-align:top;padding-top:1px;font-family:'JetBrains Mono',monospace;}
+.r-profile-val{display:table-cell;color:var(--white);font-size:11.5px;}
+.r-profile-val.cyan{color:var(--cyan);}
+.r-prof-item{font-size:11.5px;color:var(--gray);line-height:1.6;margin-bottom:7px;padding-left:14px;position:relative;}
+.r-prof-item::before{content:'>>';position:absolute;left:0;color:var(--cyan);font-size:9px;top:2px;font-family:'JetBrains Mono',monospace;}
+.r-interest-block{margin-bottom:10px;padding:9px 12px;background:rgba(0,212,255,0.04);border-left:2px solid var(--cyan);border-radius:0 8px 8px 0;}
+.r-interest-title{font-size:11px;font-weight:700;color:var(--white);margin-bottom:3px;text-transform:uppercase;letter-spacing:0.5px;}
+.r-interest-desc{font-size:10.5px;color:var(--gray);line-height:1.6;}
+.r-download-bar{
+  text-align:center;padding:20px 30px;
+  border-top:1px solid rgba(0,212,255,0.1);
+  background:rgba(0,212,255,0.02);
+  display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;
+}
+.r-download-bar a{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  background:linear-gradient(135deg,var(--cyan),var(--violet));
+  color:#fff;text-decoration:none;
+  padding:0.7rem 1.8rem;border-radius:10px;
+  font-weight:600;font-size:0.82rem;letter-spacing:0.5px;
+  transition:all 0.3s;
+}
+.r-download-bar a:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,212,255,0.35);}
+.r-download-note{font-size:0.72rem;color:var(--gray);font-family:'JetBrains Mono',monospace;}
+@media(max-width:700px){
+  .r-body{display:block}
+  .r-left,.r-right{display:block;width:100%;padding:20px;border-right:none}
+  .r-left{border-bottom:1px solid rgba(0,212,255,0.1)}
+  .r-header{padding:24px 20px;gap:16px}
+  .r-htext h2{font-size:26px;}
+}
 </style>
 </head>
 <body>
@@ -591,6 +672,7 @@ footer{
     <li><a href="#" data-p="skills" onclick="go('skills');return false">Skills</a></li>
     <li><a href="#" data-p="projects" onclick="go('projects');return false">Projects</a></li>
     <li><a href="#" data-p="blog" onclick="go('blog');return false">Blog</a></li>
+    <li><a href="#" data-p="resume" onclick="go('resume');return false">Resume</a></li>
     <li><a href="#" data-p="contact" onclick="go('contact');return false" class="nav-cta">Contact ✉</a></li>
   </ul>
   <div class="hamburger" id="hburg" onclick="toggleNav()"><span></span><span></span><span></span></div>
@@ -627,7 +709,8 @@ footer{
     </div>
     <div class="hero-socials">
       <span class="hero-socials-label">// find me on</span>
-      <a class="s-icon" href="https://www.instagram.com/h_rsh_99/" target="_blank" title="Instagram"><span>📸</span></a>
+      <a class="s-icon" href="https://www.instagram.com/h_rsh_99/" target="_blank" title="Instagram (@h_rsh_99)"><span>📸</span></a>
+      <a class="s-icon" href="https://www.instagram.com/h_rsh_998/" target="_blank" title="Instagram 2 (@h_rsh_998)"><span>📷</span></a>
       <a class="s-icon" href="https://www.linkedin.com/in/singh-harsh09/" target="_blank" title="LinkedIn"><span>💼</span></a>
       <a class="s-icon" href="https://x.com/h_rsh_99" target="_blank" title="Twitter/X"><span>𝕏</span></a>
       <a class="s-icon" href="https://github.com/rajputharshsingh987-cyber" target="_blank" title="GitHub"><span>🐙</span></a>
@@ -665,7 +748,7 @@ footer{
 <footer>
   <span class="footer-logo">HS./</span>
   <div class="footer-center"><p>© 2026 Harsh Singh · B.Tech CSE · Sage University Indore · <span>rajputharshsingh69@gmail.com</span></p></div>
-  <div class="footer-links"><a href="#" onclick="go('about');return false">About</a><a href="#" onclick="go('skills');return false">Skills</a><a href="#" onclick="go('contact');return false">Contact</a></div>
+  <div class="footer-links"><a href="#" onclick="go('about');return false">About</a><a href="#" onclick="go('skills');return false">Skills</a><a href="#" onclick="go('resume');return false">Resume</a><a href="#" onclick="go('contact');return false">Contact</a></div>
 </footer>
 </div>
 
@@ -1071,6 +1154,15 @@ footer{
         </div>
         <span class="clink-arrow">→</span>
       </a>
+      <a href="https://www.instagram.com/h_rsh_998/" class="clink fi-anim d2" target="_blank">
+        <div class="clink-icon">📷</div>
+        <div>
+          <div class="clink-label">Instagram 2nd ID</div>
+          <div class="clink-val">@h_rsh_998</div>
+          <div class="clink-sub">Second Instagram account</div>
+        </div>
+        <span class="clink-arrow">→</span>
+      </a>
       <a href="https://www.linkedin.com/in/singh-harsh09/" class="clink fi-anim d3" target="_blank">
         <div class="clink-icon">💼</div>
         <div>
@@ -1130,6 +1222,133 @@ footer{
   <span class="footer-logo">HS./</span>
   <div class="footer-center"><p>© 2026 Harsh Singh · B.Tech CSE · Sage University Indore · <span>rajputharshsingh69@gmail.com</span></p></div>
   <div class="footer-links"><a href="#" onclick="go('home');return false">Home</a><a href="#" onclick="go('about');return false">About</a><a href="#" onclick="go('skills');return false">Skills</a></div>
+</footer>
+</div>
+
+<!-- ============================================================ RESUME ============================================================ -->
+<div id="p-resume" class="page">
+<section>
+  <div class="section-header">
+    <div class="s-eyebrow">// my resume</div>
+    <h2 class="s-title">My <span class="hl">Resume</span></h2>
+    <p class="s-sub">A quick overview of my skills, education, projects, and interests. Download the PDF or view it right here.</p>
+  </div>
+  <div class="resume-wrap">
+    <div class="resume-card-main fi-anim">
+      <!-- RESUME HEADER -->
+      <div class="r-header">
+        <div class="r-avatar">HS</div>
+        <div class="r-htext">
+          <h2>Harsh Singh</h2>
+          <div class="r-role">Web Developer &nbsp;·&nbsp; CSE Student &nbsp;·&nbsp; AI Explorer</div>
+        </div>
+      </div>
+      <!-- RESUME BODY -->
+      <div class="r-body">
+        <div class="r-left">
+          <div class="r-sec">
+            <div class="r-sec-title">Major Accomplishments</div>
+            <div class="r-proj-name">Chatter Box</div>
+            <div class="r-proj-desc">Anonymous group chatting web application establishing a real-time chatting environment using WebSockets.</div>
+            <div class="r-proj-name">Portfolio Website</div>
+            <div class="r-proj-desc">Personal developer portfolio showcasing skills, education, and projects — fully responsive across all devices.</div>
+            <div class="r-proj-name">Harsh Orbit Blog</div>
+            <div class="r-proj-desc">Tech blog exploring programming, AI, and modern web technologies for fellow learners and builders.</div>
+          </div>
+          <div class="r-sec">
+            <div class="r-sec-title">Skills</div>
+            <div class="r-skills-wrap">
+              <span class="r-skill-tag">HTML5</span>
+              <span class="r-skill-tag">CSS3</span>
+              <span class="r-skill-tag">JavaScript</span>
+              <span class="r-skill-tag">Web Dev</span>
+              <span class="r-skill-tag">App Dev</span>
+              <span class="r-skill-tag">UI / UX</span>
+              <span class="r-skill-tag">Responsive Design</span>
+              <span class="r-skill-tag">GitHub</span>
+              <span class="r-skill-tag">Databases</span>
+              <span class="r-skill-tag">AI &amp; ML</span>
+              <span class="r-skill-tag">Problem Solving</span>
+              <span class="r-skill-tag">Blogging</span>
+            </div>
+          </div>
+          <div class="r-sec">
+            <div class="r-sec-title">Education</div>
+            <div class="r-edu-block">
+              <div class="r-edu-inst">Sage University — Alta School of Tech</div>
+              <div class="r-edu-degree">B.Tech — Computer Science &amp; Engineering</div>
+              <div class="r-edu-degree">Indore, Madhya Pradesh</div>
+              <div class="r-edu-year">2026 – 2030</div>
+            </div>
+            <div class="r-divider"></div>
+            <div class="r-edu-block">
+              <div class="r-edu-inst">Garima Vidya Vihar Sr. Sec. School</div>
+              <div class="r-edu-degree">Class 12 — CBSE Board</div>
+              <div class="r-edu-grade">Percentage: 64%</div>
+              <div class="r-edu-year">Passed 2026</div>
+            </div>
+            <div class="r-divider"></div>
+            <div class="r-edu-block">
+              <div class="r-edu-inst">Garima Vidya Vihar Sr. Sec. School</div>
+              <div class="r-edu-degree">Class 10 — CBSE Board</div>
+              <div class="r-edu-grade">Percentage: 67%</div>
+              <div class="r-edu-year">Passed 2024</div>
+            </div>
+          </div>
+        </div>
+        <div class="r-right">
+          <div class="r-sec">
+            <div class="r-sec-title">Profile</div>
+            <div class="r-profile-row"><span class="r-profile-label">Phone</span><span class="r-profile-val">+91 9098456263</span></div>
+            <div class="r-profile-row"><span class="r-profile-label">Email</span><span class="r-profile-val cyan">rajputharshsingh69@gmail.com</span></div>
+            <div class="r-profile-row"><span class="r-profile-label">Location</span><span class="r-profile-val">Indore, Madhya Pradesh</span></div>
+            <div class="r-profile-row"><span class="r-profile-label">Insta 1</span><span class="r-profile-val cyan">@h_rsh_99</span></div>
+            <div class="r-profile-row"><span class="r-profile-label">Insta 2</span><span class="r-profile-val cyan">@h_rsh_998</span></div>
+            <div class="r-profile-row"><span class="r-profile-label">LinkedIn</span><span class="r-profile-val cyan">singh-harsh09</span></div>
+            <div class="r-profile-row"><span class="r-profile-label">Blog</span><span class="r-profile-val cyan">harsh-orbit.blogspot.com</span></div>
+          </div>
+          <div class="r-sec">
+            <div class="r-sec-title">Skill Proficiency</div>
+            <div class="r-prof-item">Passionate about writing clean, efficient, and well-structured code.</div>
+            <div class="r-prof-item">Strong grasp of modern web development — HTML, CSS, JavaScript &amp; responsive design.</div>
+            <div class="r-prof-item">Hands-on experience exploring AI &amp; ML tools and their practical applications.</div>
+            <div class="r-prof-item">Good understanding of software engineering fundamentals and problem-solving.</div>
+            <div class="r-prof-item">Actively building UI/UX skills with an eye for clean, usable design.</div>
+            <div class="r-prof-item">Strong communicator — open to collaboration with fellow learners and builders.</div>
+          </div>
+          <div class="r-sec">
+            <div class="r-sec-title">Interests</div>
+            <div class="r-interest-block">
+              <div class="r-interest-title">Web Development</div>
+              <div class="r-interest-desc">Deeply passionate about building responsive, modern websites and exploring new frameworks every day.</div>
+            </div>
+            <div class="r-interest-block">
+              <div class="r-interest-title">AI &amp; Emerging Technologies</div>
+              <div class="r-interest-desc">Fascinated by how AI is reshaping every industry — exploring tools, models, and use cases to stay ahead.</div>
+            </div>
+            <div class="r-interest-block">
+              <div class="r-interest-title">Graphic Design &amp; Visuals</div>
+              <div class="r-interest-desc">Everything is connected to visuals — love designing things that make people feel something.</div>
+            </div>
+            <div class="r-interest-block">
+              <div class="r-interest-title">Continuous Learning</div>
+              <div class="r-interest-desc">"...still there's a lot to learn." Curiosity drives everything I do.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- DOWNLOAD BAR -->
+      <div class="r-download-bar">
+        <a href="Harsh_Singh_Resume.pdf" download>⬇ Download PDF Resume</a>
+        <span class="r-download-note">// Updated · June 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <span class="footer-logo">HS./</span>
+  <div class="footer-center"><p>© 2026 Harsh Singh · B.Tech CSE · Sage University Indore · <span>rajputharshsingh69@gmail.com</span></p></div>
+  <div class="footer-links"><a href="#" onclick="go('home');return false">Home</a><a href="#" onclick="go('about');return false">About</a><a href="#" onclick="go('contact');return false">Contact</a></div>
 </footer>
 </div>
 
